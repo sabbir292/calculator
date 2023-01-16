@@ -21,6 +21,7 @@ const clearBtn = document.querySelector(".clear")
 const currentCal = document.querySelector(".current-cal")
 const previousCal = document.querySelector(".prev-cal")
 //************************************************************
+const footer = document.querySelector(".footer")
 
 // equalTo.addEventListener('click', evaluate)
 
@@ -171,6 +172,8 @@ function convertKeyboardOparator(oparator){
     if(oparator ==='-') return '-'
     if(oparator ==='+') return '+'
 }
+
+footer.textContent = `Copyright @SabbirHossain ${new Date().getFullYear()}`
 
 
  function add(num1, num2){
